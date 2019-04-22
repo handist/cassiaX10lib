@@ -1,0 +1,650 @@
+START: cassia.util.Chunk[x10.lang.Long] scenario List
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::typeName ()
+BEFORE: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: cassia.util.Chunk[x10.lang.Long]
+CALL: cassia.util.Chunk[x10.lang.Long]::toString ()
+BEFORE: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::hashCode ()
+BEFORE: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: 23908288
+CALL: cassia.util.Chunk[x10.lang.Long]::equals ([10..20:100,121,144,169,196,225,256,289,324,361,400@10..20])
+BEFORE: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: true
+CALL: cassia.util.Chunk[x10.lang.Long]::equals (samples.rangedList.TestList[x10.lang.Long]@0x16cce70)
+BEFORE: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: Any [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::getFirst ()
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: 100
+CALL: cassia.util.Chunk[x10.lang.Long]::getLast ()
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: 400
+CALL: cassia.util.Chunk[x10.lang.Long]::indices ()
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: [10,11,12,13,14,15,16,17,18,19...(omitted 1 elements)]
+CALL: cassia.util.Chunk[x10.lang.Long]::addBefore (10, 123)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::addBefore (9, 123)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::addBefore (11, 123)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::indexOf (225)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: 15
+CALL: cassia.util.Chunk[x10.lang.Long]::indexOf (15, 225)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: 15
+CALL: cassia.util.Chunk[x10.lang.Long]::indexOf (-1)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: -1
+CALL: cassia.util.Chunk[x10.lang.Long]::indexOf (15, -1)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: -1
+CALL: cassia.util.Chunk[x10.lang.Long]::iterator ()
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: cassia.util.Chunk.It[x10.lang.Long]@0x183b760
+CALL: cassia.util.Chunk[x10.lang.Long]::iteratorFrom (15)
+BEFORE: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,196,225,256,289,324,361,400@10..20]
+RETURN: cassia.util.Chunk.It[x10.lang.Long]@0x183b0a0
+START: cassia.util.Chunk.It[x10.lang.Long] scenario ListIterator
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+CALL: cassia.util.Chunk.It[x10.lang.Long]::typeName ()
+BEFORE: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: cassia.util.Chunk.It[x10.lang.Long]
+CALL: cassia.util.Chunk.It[x10.lang.Long]::toString ()
+BEFORE: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hashCode ()
+BEFORE: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 25415008
+CALL: cassia.util.Chunk.It[x10.lang.Long]::equals (cassia.util.Chunk.It[x10.lang.Long]@0x183cd60)
+BEFORE: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::equals (samples.rangedList.TestListIterator[x10.lang.Long]@0x16cccc0)
+BEFORE: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: Any cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 225
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 256
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 289
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 324
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 361
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 324
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 289
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 256
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 15
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 14
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 13
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 14
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 15
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 16
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 289
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 324
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 361
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 400
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 24
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 23
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previousIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 22
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 23
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 24
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 25
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 26
+CALL: cassia.util.Chunk.It[x10.lang.Long]::nextIndex ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 27
+CALL: cassia.util.Chunk.It[x10.lang.Long]::set (225)
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::set (123)
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 400
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 361
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 324
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 289
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 256
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 225
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 196
+CALL: cassia.util.Chunk.It[x10.lang.Long]::set (225)
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: void
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasPrevious ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::previous ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 169
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 225
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 225
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 256
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 289
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 324
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 361
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: true
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: 400
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk.It[x10.lang.Long]::hasNext ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+RETURN: false
+CALL: cassia.util.Chunk.It[x10.lang.Long]::next ()
+BEFORE: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+AFTER: ListIterator cassia.util.Chunk.It[x10.lang.Long]@0x183cd60
+END: cassia.util.Chunk.It[x10.lang.Long] scenario ListIterator
+CALL: cassia.util.Chunk[x10.lang.Long]::lastIndexOf (225)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 15
+CALL: cassia.util.Chunk[x10.lang.Long]::lastIndexOf (-1)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: -1
+CALL: cassia.util.Chunk[x10.lang.Long]::lastIndexOf (15, 225)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 15
+CALL: cassia.util.Chunk[x10.lang.Long]::lastIndexOf (15, -1)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: -1
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (10)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (10)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (11)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (11)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (19)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAt (19)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeFirst ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeLast ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::reverse ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::sort ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::sort ((x10.lang.Long,x10.lang.Long)=>x10.lang.Int@0x16c98c0)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (10, 15)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [10..15:100,121,144,169,225,225@10..15]
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (15, 10)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (20, 15)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (15, 20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [15..20:225,256,289,324,361,400@15..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (15, 15)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [15..15:225@15..15]
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (10, 20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (-1, 20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (10, 21)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.ArrayIndexOutOfBoundsException
+CALL: cassia.util.Chunk[x10.lang.Long]::add (123)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::addAll ([225,123,225,123])
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::subList (14, 20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [14..20:225,225,256,289,324,361,400@14..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::addAllWhere ([225,123,225,123], (x10.lang.Long)=>x10.lang.Boolean@0x16c98a0)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::addAllWhere ([225,123,225,123], (x10.lang.Long)=>x10.lang.Boolean@0x16c9890)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::clear ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::clone ()
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+CALL: cassia.util.Chunk[x10.lang.Long]::remove (123)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAll ([225,123,225,123])
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::removeAllWhere ((x10.lang.Long)=>x10.lang.Boolean@0x16c9880)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::retainAll ([225,123,225,123])
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+EXCEPTION: x10.lang.UnsupportedOperationException
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (10)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 100
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (11)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 121
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (12)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 144
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (13)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 169
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (14)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 225
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (15)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 225
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (16)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 256
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (17)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 289
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (18)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 324
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (19)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 361
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThis (20)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 400
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (10, 400)
+BEFORE: List [10..20:100,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,121,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 400
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (11, 361)
+BEFORE: List [10..20:400,121,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,144,169,225,225,256,289,324,361,400@10..20]
+RETURN: 361
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (12, 324)
+BEFORE: List [10..20:400,361,144,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,169,225,225,256,289,324,361,400@10..20]
+RETURN: 324
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (13, 289)
+BEFORE: List [10..20:400,361,324,169,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,225,225,256,289,324,361,400@10..20]
+RETURN: 289
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (14, 256)
+BEFORE: List [10..20:400,361,324,289,225,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,256,289,324,361,400@10..20]
+RETURN: 256
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (15, 225)
+BEFORE: List [10..20:400,361,324,289,256,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,256,289,324,361,400@10..20]
+RETURN: 225
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (16, 225)
+BEFORE: List [10..20:400,361,324,289,256,225,256,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,289,324,361,400@10..20]
+RETURN: 225
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (17, 169)
+BEFORE: List [10..20:400,361,324,289,256,225,225,289,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,324,361,400@10..20]
+RETURN: 169
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (18, 144)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,324,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,361,400@10..20]
+RETURN: 144
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (19, 121)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,361,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,400@10..20]
+RETURN: 121
+CALL: cassia.util.Chunk[x10.lang.Long]::operatorThisEqual (20, 100)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,400@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: 100
+CALL: cassia.util.Chunk[x10.lang.Long]::contains (123)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::contains (225)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: true
+CALL: cassia.util.Chunk[x10.lang.Long]::contains (-1)
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::containsAll ([225,123,225,123])
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::isEmpty ()
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: false
+CALL: cassia.util.Chunk[x10.lang.Long]::size ()
+BEFORE: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+RETURN: 11
+AFTER: List [10..20:400,361,324,289,256,225,225,169,144,121,100@10..20]
+END: cassia.util.Chunk[x10.lang.Long] scenario List
