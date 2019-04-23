@@ -82,6 +82,7 @@ Currently under [Eclipse Public License 1.0 (read here)](http://choosealicense.c
 * Tomio Kamada
 * Kento Yamashita
 * Daisuke Fujishima
+* Takuma Torii
 * Teppei Mishima
 * Tosiyuki Takahashi
 
